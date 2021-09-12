@@ -106,7 +106,14 @@ function spawnDoors()
     invisibleBlock.velocityY = 1;
 
     //change the depth of the ghost and door
-    
+    ghost.depth=door.depth
+    ghost.depth+=1
+    door.lifetime=800
+    climber.lifetime=800;
+    invisibleBlock.lifetime=800
+    doorsGroup.add(door)
+    climbersGroup.add(climber)
+    invisibleBlockGroup.add(invisibleBlock)
      
 
     
